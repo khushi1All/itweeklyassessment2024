@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<!-- saved from url=(0032)http://127.0.0.1:5500/week6.html -->
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image Gallery</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+      }
+
+      .image-container {
+        display: inline-block;
+        margin: 20px;
+        text-align: left;
+      }
+
+      .image-container img {
+        border: 5px solid black;
+        max-width: 100%;
+      }
+
+      .image-container:nth-child(1) img {
+        border: 5px solid black;
+      }
+
+      .image-container:nth-child(2) img {
+        width: 100px;
+        height: 100px;
+      }
+
+      .image-container:nth-child(3) {
+        float: left;
+        margin-right: 20px;
+      }
+
+      .image-container:nth-child(4) {
+        margin: 50px;
+      }
+
+      .image-container p {
+        margin-top: 10px;
+      }
+    </style>
+  </head>
+  <body data-new-gr-c-s-check-loaded="14.1182.0" data-gr-ext-installed="">
+    <div class="image-container">
+      <img
+        src="C:\IT\khushi\week6assignment\Week6assignment1\norlight1.jpg"
+        alt="Northern light 1"
+      />
+      <p>First Northern light.</p>
+    </div>
+
+    <div class="image-container">
+      <img
+        src="C:\IT\khushi\week6assignment\Week6assignment1\norlights2.jpg"
+        alt="Northern light 2"
+      />
+      <a
+        href="https://www.space.com/15139-northern-lights-auroras-earth-facts-sdcmp.html"
+        target="_blank"
+        >View Original Image</a
+      >
+      <p>Second Northern light.</p>
+    </div>
+
+    <div class="image-container">
+      <img
+        src="C:\IT\khushi\week6assignment\Week6assignment1\norlight3.jpg"
+        alt="Northern light 3"
+      />
+      <p>Third Northern light.</p>
+    </div>
+
+    <div class="image-container">
+      <img
+        src="C:\IT\khushi\week6assignment\Week6assignment1\norlight4.jpg"
+        alt="Northern light 4"
+      />
+      <p>Fourth Northern light</p>
+    </div>
+    <!-- Code injected by live-server -->
+    <script>
+      // <![CDATA[  <-- For SVG support
+      if ("WebSocket" in window) {
+        (function () {
+          function refreshCSS() {
+            var sheets = [].slice.call(document.getElementsByTagName("link"));
+            var head = document.getElementsByTagName("head")[0];
+            for (var i = 0; i < sheets.length; ++i) {
+              var elem = sheets[i];
+              var parent = elem.parentElement || head;
+              parent.removeChild(elem);
+              var rel = elem.rel;
+              if (
+                (elem.href && typeof rel != "string") ||
+                rel.length == 0 ||
+                rel.toLowerCase() == "stylesheet"
+              ) {
+                var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, "");
+                elem.href =
+                  url +
+                  (url.indexOf("?") >= 0 ? "&" : "?") +
+                  "_cacheOverride=" +
+                  new Date().valueOf();
+              }
+              parent.appendChild(elem);
+            }
+          }
+          var protocol =
+            window.location.protocol === "http:" ? "ws://" : "wss://";
+          var address =
+            protocol + window.location.host + window.location.pathname + "/ws";
+          var socket = new WebSocket(address);
+          socket.onmessage = function (msg) {
+            if (msg.data == "reload") window.location.reload();
+            else if (msg.data == "refreshcss") refreshCSS();
+          };
+          if (
+            sessionStorage &&
+            !sessionStorage.getItem("IsThisFirstTime_Log_From_LiveServer")
+          ) {
+            console.log("Live reload enabled.");
+            sessionStorage.setItem("IsThisFirstTime_Log_From_LiveServer", true);
+          }
+        })();
+      } else {
+        console.error(
+          "Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading."
+        );
+      }
+      // ]]>
+    </script>
+  </body>
+  <grammarly-desktop-integration data-grammarly-shadow-root="true"
+    ><template shadowrootmode="open"
+      ><style>
+        div.grammarly-desktop-integration {
+          position: absolute;
+          width: 1px;
+          height: 1px;
+          padding: 0;
+          margin: -1px;
+          overflow: hidden;
+          clip: rect(0, 0, 0, 0);
+          white-space: nowrap;
+          border: 0;
+          -moz-user-select: none;
+          -webkit-user-select: none;
+          -ms-user-select: none;
+          user-select: none;
+        }
+
+        div.grammarly-desktop-integration:before {
+          content: attr(data-content);
+        }
+      </style>
+      <div
+        aria-label="grammarly-integration"
+        role="group"
+        tabindex="-1"
+        class="grammarly-desktop-integration"
+        data-content='{"mode":"limited","isActive":false,"isUserDisabled":false}'
+      ></div></template
+  ></grammarly-desktop-integration>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Search Form</title>
+    <style>
+      .search-form-container {
+        border: 3px solid #0e0e0e; /* Example for a solid border */
+        padding: 10px; /* Example for padding inside the box */
+        margin: 0 auto; /* Centers the box horizontally */
+        width: 30%; /* Example for setting the width */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="search-form-container">
+      <form action="search.php">
+        <table>
+          <h2>Search our web site!</h2>
+          <hr />
+          <p>Where do you want to search?</p>
+          <input type="radio" name="search_location" value="whole_site" />
+          Whole site
+          <br />
+          <input
+            type="radio"
+            name="search_location"
+            value="business_partners"
+          />
+          Business Partners Section
+          <br />
+          <input
+            type="radio"
+            name="search_location"
+            value="corporate_communications"
+          />
+          Corporate Communications Section
+          <br />
+          <input type="radio" name="search_location" value="lotus_education" />
+          Lotus Education Section
+          <br />
+
+          <p>Enter a word or two that we can search on:</p>
+          <input type="text" />
+          <br />
+
+          <input type="submit" value="Submit" />
+          <input type="reset" value="Clear" />
+        </table>
+      </form>
+    </div>
+  </body>
+</html>
