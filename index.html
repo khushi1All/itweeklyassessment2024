@@ -3,340 +3,104 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>IT-Assessment Khushi</title>
+    <title>Page1 detail</title>
     <style>
-      * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-      }
-
       body {
-        font-family: "Arial", sans-serif;
-        line-height: 1.6;
-        color: #333;
-        background-color: #f4f4f4;
-        display: flex;
-        flex-direction: column;
-        min-height: 100vh;
+        background-image: url("landscape.jpg");
+        background-repeat: "no-repeat";
+        backface-visibility: "";
+        background-size: cover;
       }
-
-      header {
-        background: #35424a;
-        color: #ffffff;
-        padding: 1.5rem 0;
-        text-align: center;
-        font-size: 2rem;
-        font-weight: bold;
-      }
-
-      nav {
-        background: #333;
-        color: white;
-        padding: 1rem 0;
+      h1 {
         text-align: center;
       }
-
-      nav ul {
-        list-style: none;
-        display: flex;
-        justify-content: center;
-        padding: 0;
-      }
-
-      nav ul li {
-        margin: 0 1rem;
-      }
-
-      nav ul li a {
-        color: white;
-        text-decoration: none;
-        font-weight: bold;
-        transition: color 0.3s ease;
-      }
-
-      nav ul li a:hover {
-        color: #ffd700;
-      }
-
-      .container {
-        display: flex;
-        flex: 1;
-        padding: 2rem;
-      }
-
-      .sidebar {
-        width: 25%;
-        padding: 1rem;
-        background: #e4e4e4;
-        border-right: 1px solid #ccc;
-      }
-
-      .main-content {
-        flex: 1;
-        padding: 2rem;
-        background: #ffffff;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-      }
-
-      section {
-        margin-bottom: 2rem;
-      }
-
-      section h2 {
-        margin-bottom: 1rem;
-        color: #35424a;
-        border-bottom: 2px solid #ccc;
-        padding-bottom: 0.5rem;
-      }
-
-      .additional-section h2 {
-        color: #35424a;
-      }
-
-      footer {
-        background: #35424a;
-        color: #ffffff;
-        text-align: center;
-        padding: 1rem 0;
-        margin-top: auto;
-      }
-
-      .dropdown {
-        position: relative;
-        display: inline-block;
-      }
-
-      .dropdown-content {
-        display: none;
+      body::before {
+        content: "";
         position: absolute;
-        background-color: #f9f9f9;
-        min-width: 160px;
-        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-        z-index: 1;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
       }
-
-      .dropdown-content a {
-        color: black;
-        padding: 12px 16px;
-        text-decoration: none;
-        display: block;
-      }
-
-      .dropdown-content a:hover {
-        background-color: #f1f1f1;
-      }
-
-      .dropdown:hover .dropdown-content {
-        display: block;
-      }
-
-      .dropdown:hover .dropbtn {
-        background-color: #3e8e41;
-      }
-
-      .task-img {
-        max-width: 100%;
-        height: auto;
-        display: block;
-        margin: 1rem 0;
+      body {
+        font-weight: bolder;
       }
     </style>
   </head>
   <body>
-    <header>Welcome to Khushi's Website</header>
-    <nav>
+    <h1>WELCOME TO THE SITE!</h1>
+    <p align="center">
+      "Landscapes have a language of their own, expressing beauty and serenity
+      in every fold of the earth."
+    </p>
+    <p>
+      A list of some of the most renowned and breathtaking landscapes in the
+      world:
+    </p>
+    <ol type="1">
+      <li>Grand Canyon, USA</li>
       <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#IT-Assessment">IT Assessment</a></li>
+        <li>
+          Known for its immense size and its intricate and colorful landscape.
+        </li>
       </ul>
-    </nav>
-    <div class="container">
-      <aside class="sidebar">
-        <h2>Sidebar</h2>
-        <p>This is the sidebar content.</p>
-        <ul>
-          <li><a href="#home">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#IT-Assessment">IT Assessment</a></li>
-          <li class="dropdown">
-            <a href="javascript:void(0)" class="dropbtn">Assessment List</a>
-            <div class="dropdown-content">
-              <a href="#week5">Week 5</a>
-              <a href="#week6">Week 6</a>
-              <a href="#week7">Week 7</a>
-              <a href="#week8">Week 8</a>
-              <a href="#week9">Week 9</a>
-              <a href="#week10">Week 10</a>
-            </div>
-          </li>
-        </ul>
-      </aside>
-      <main class="main-content">
-        <section id="home">
-          <h2>Home</h2>
-          <p>All about my assignment.</p>
-        </section>
-        <section id="about">
-          <h2>About</h2>
-          <p>
-            • Student Name: Khushi Kumari <br />
-            • UWE ID: 24030167 <br />
-            • Module code: UFCFL1-15-0 <br />
-            • Level: Level 3 <br />
-            • Faculty: Faculty of INTERNET & Technology <br />
-            • Department: FET Department of Computer Science & Creative
-            Technology
-          </p>
-        </section>
-        <section id="IT-Assessment">
-          <h2>IT Assessment</h2>
-          <p>write about weekly assessment</p>
-          <ul>
-            <li>Week 5</li>
-            <p>
-              Week 5: Confused & Curious! Learned about scary password hacking
-              (thanks for the scare!), but then jumped to website lists? Feeling
-              a bit lost, but maybe there's a way to connect them?
-            </p>
-            <li>Week 6</li>
-            <p>
-              Week 6 website assignment! Excitement = for making my own website.
-              Nervousness = about messing up the code. But hey, chance to learn
-              HTML/CSS = Maybe I can even make it interactive! Just need some
-              clearer instructions on what exactly to build. Wish me luck!
-            </p>
-            <li>Week 7</li>
-            <p>
-              Week 7 (I can't peek yet, but...): Stay tuned! I'll share my
-              thoughts and feelings about Week 7's assignment after I see what
-              it is.
-            </p>
-            <li>Week 8</li>
-            <p>
-              Week 8: Feels Overload! This week's assignment is all about
-              emotions! Sounds interesting, but I wonder how it connects to what
-              we've learned before? Maybe we'll get to express our feelings
-              about the past few weeks? Either way, I'm curious to see what it
-              entails.
-            </p>
-            <li>Week 9</li>
-            <p>
-              Week 9: Diving deeper into web development! Learned about
-              JavaScript basics and DOM manipulation. Excited to see my pages
-              come to life with interactivity.
-            </p>
-            <li>Week 10</li>
-            <p>
-              Week 10: Final stretch! Applied all the concepts learned so far to
-              build a mini-project. It was challenging but rewarding to see the
-              final product. Covered topics from HTML, CSS, to JavaScript and
-              some basics of backend development.
-            </p>
-          </ul>
-        </section>
-        <section id="week5" class="additional-section">
-          <h2>Week 5</h2>
-
-          <a href="C:\IT\khushi\week5assignment\hack.html" target="_blank"
-            >Task 1</a
-          >
-          <a href="C:\IT\khushi\week5assignment\List.html" target="_blank"
-            >Task 2</a
-          >
-        </section>
-        <section id="week6" class="additional-section">
-          <h2>Week 6</h2>
-
-          <a
-            href="C:\IT\khushi\week6assignment\Week6assignment1\Week6assignment1.html"
-            target="_blank"
-            >Task 1</a
-          >
-          <a
-            href="C:\IT\khushi\week6assignment\week6assignment2\Aboutus.html"
-            target="_blank"
-            >Task 2</a
-          >
-          <a
-            href="C:\IT\khushi\week6assignment\week6assignment3\bus.html"
-            target="_blank"
-            >Task 3</a
-          >
-        </section>
-        <section id="week7" class="additional-section">
-          <h2>Week 7</h2>
-
-          <a href="C:\IT\khushi\week7assignment\exercise1.html" target="_blank"
-            >Task 1</a
-          >
-          <a href="C:\IT\khushi\week7assignment\exercise2.html" target="_blank"
-            >Task 2</a
-          >
-        </section>
-        <section id="week8" class="additional-section">
-          <h2>Week 8</h2>
-
-          <a href="C:\IT\khushi\week8assignment\index.html" target="_blank"
-            >Task 1</a
-          >
-        </section>
-        <section id="week9" class="additional-section">
-          <h2>Week 9</h2>
-
-          <a href="C:\IT\khushi\week9assignment\home.html" target="_blank"
-            >Task 1</a
-          >
-
-          <a href="C:\IT\khushi\week9assignment\index (1).html" target="_blank"
-            >Task 2</a
-          >
-          <a href="C:\IT\khushi\week9assignment\task3.html" target="_blank"
-            >Task 3</a
-          >
-        </section>
-        <section id="week10" class="additional-section">
-          <h2>Week 10</h2>
-
-          <a href="C:\IT\khushi\week10assignment\1.html" target="_blank"
-            >Task 1</a
-          >
-          <a href="C:\IT\khushi\week10assignment\2.html" target="_blank"
-            >Task 2</a
-          >
-          <a href="C:\IT\khushi\week10assignment\exe3.html" target="_blank"
-            >Task 3</a
-          >
-          <a href="C:\IT\khushi\week10assignment\exe4.html" target="_blank"
-            >Task 4</a
-          >
-          <a href="C:\IT\khushi\week10assignment\exe5.html" target="_blank"
-            >Task 5</a
-          >
-          <a href="C:\IT\khushi\week10assignment\6.html" target="_blank"
-            >Task 6</a
-          >
-          <a href="C:\IT\khushi\week10assignment\7.html" target="_blank"
-            >Task 7</a
-          >
-          <a href="C:\IT\khushi\week10assignment\8.html" target="_blank"
-            >Task 8</a
-          >
-          <a href="C:\IT\khushi\week10assignment\9.html" target="_blank"
-            >Task 9</a
-          >
-          <a href="C:\IT\khushi\week10assignment\10.html" target="_blank"
-            >Task 10</a
-          >
-          <a href="C:\IT\khushi\week10assignment\11.html" target="_blank"
-            >Task 11</a
-          >
-        </section>
-      </main>
-    </div>
-    <footer>
-      <p>Khushi-IT_Assessment-TBC</p>
-    </footer>
+      <li>Great Barrier Reef, Australia</li>
+      <ul>
+        <li>The world's largest coral reef system, visible from space.</li>
+      </ul>
+      <li>Machu Picchu, Peru</li>
+      <ul>
+        <li>An ancient Incan city set high in the Andes Mountains.</li>
+      </ul>
+      <li>Santorini, Greece</li>
+      <ul>
+        <li>
+          Famous for its stunning sunsets and white-washed buildings overlooking
+          the Aegean Sea.
+        </li>
+      </ul>
+      <li>Serengeti, Tanzania</li>
+      <ul>
+        <li>
+          Renowned for its annual migration of over 1.5 million white-bearded
+          (or brindled) wildebeest and 250,000 zebra.
+        </li>
+      </ul>
+      <li>Antelope Canyon, USA</li>
+      <ul>
+        <li>
+          Known for its wave-like structure and the light beams that shine down
+          into the openings of the canyon.
+        </li>
+      </ul>
+      <li>Victoria Falls, Zambia/Zimbabwe</li>
+      <ul>
+        <li>
+          One of the largest and most famous waterfalls in the world, known
+          locally as "The Smoke That Thunders."
+        </li>
+      </ul>
+      <li>Patagonia, Argentina/Chile</li>
+      <ul>
+        <li>
+          A sparsely populated region known for its dramatic landscapes of
+          mountains, deserts, and grasslands.
+        </li>
+      </ul>
+      <li>Banff National Park, Canada</li>
+      <ul>
+        <li>
+          Famous for its stunning mountainous scenery, pristine lakes, and
+          abundant wildlife.
+        </li>
+      </ul>
+      <li>Plitvice Lakes National Park, Croatia</li>
+      <ul>
+        <li>
+          Known for its cascading lakes, stunning waterfalls, and lush greenery.
+        </li>
+      </ul>
+    </ol>
   </body>
 </html>
